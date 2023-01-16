@@ -1,0 +1,92 @@
+/* select what is affected by the css style */
+
+/* ======== BODY STYLE ========= */
+body {
+	background-color: #000;
+	color: white;
+	font-family: Calibri;
+}
+
+/* ======== H1 STYLE ========= */
+h1 {
+	margin-bottom: 0px;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Apple Chancery, Optima, Arial, sans-serif;
+}
+
+
+/* ======== PARAGRAPH STYLE ========= */
+p {
+	color: #666FFF;
+	margin-top: 0px;
+	text-align: center;
+}
+
+h2 {
+	margin-top: 0px;
+	font-size: 20px;
+}
+
+div {
+}
+
+/* ---- Link Style Definitions ---- */
+a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #555;
+}
+
+a:visited{
+
+}
+
+a:focus{
+
+}
+
+/* ----- Class Style Definitions ----- */
+.header {
+	background-color: #334d4d;
+	background-image: url(../images/very_first.jpg);
+	background-size: cover;
+	background-position: center;
+	/*background-position-y: -50px;
+	background-position-x: 100px; */
+	background-repeat: no-repeat;
+	padding: 20px;
+}
+
+.motto {
+	color: #FFF;
+}
+
+.navigation {
+	background-color: #000;
+}
+
+/* ------ Span Style Definition ----- */
+span {
+	color:yellow;
+}
+
+/* ------ CSS Box Model ----- */
+/* Margin, Border, Padding */ 
+.nav_box {
+	background-color: #334d4d;
+	width: 150px;
+
+	margin_left: 0px;
+	margin_right:;
+	margin_top:;
+	margin_bottom: 5px;
+
+    /* Can do border left, right, top, bottom or all (no declaration) */
+	border-width: 5px;
+	border-color: #005;
+	border-style: solid; /* solid, dashed, dotted, double, goove, hidden, ridge */
+
+	padding: 10px;
+}
