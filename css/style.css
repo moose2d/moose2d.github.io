@@ -1,9 +1,16 @@
 :root {
-  --clr-accent-400: ;
-  --clr-accent-100: ;
-  --clr-primary-400: ;
-  --clr-neutral-100: ;
-  --clr-neutral-900: ;
+  --clr-accent-400: #6b3b3e;
+  --clr-accent-100: #91c4b8;
+  --clr-primary-400: #506a94;
+  --clr-neutral-100: #8f99a8;
+  --clr-neutral-900: #2c2f33;
+  --clr-nebula-orange: #94724d;
+  --clr-nebula-dullBlue: #334d58;
+  --clr-nebula-lightblue: #99a0a5;
+  --clr-galaxy-red: #761511;
+  --clr-galaxy-blue: #2a5469;
+
+  --bg-neutral-100: #8fa19f;
 
   --font-family-primary: sans-serif;
 
@@ -108,6 +115,21 @@ select {
   .text-neutral-900 {
     color: var(--clr-neutral-900);
   }
+  .text-nebula-orange {
+  	color: var(--clr-nebula-orange);
+  }
+  .text-nebula-dullblue {
+  	color: var(--clr-nebula-dullBlue);
+  }
+  .text-nebula-lightblue {
+  	color: var(--clr-nebula-lightblue);
+  }
+  .text-galaxy-red{
+  	color: var(--clr-galaxy-red);
+  }
+  .text-galaxy-blue{
+  	color: var(--clr-galaxy-blue);
+  }
   .bg-primary-400 {
     background: var(--clr-primary-400);
   }
@@ -118,7 +140,7 @@ select {
     background: var(--clr-accent-100);
   }
   .bg-neutral-100 {
-    background: var(--clr-neutral-100);
+    background: var(--bg-neutral-100);
   }
   .bg-neutral-900 {
     background: var(--clr-neutral-900);
@@ -129,7 +151,26 @@ select {
 
   .primary-header {
     background: #000;
-    color: ghostwhite;
+    background-image: url(../images/header_moon.jpg);
+    background-position-x: -300px;
+    background-position-y: -200px;
+  }
+
+  .primary-header .title {
+  	color: var(--clr-galaxy-blue);
+  }
+
+  .title a, a:link, a:visited, a:hover, a:active {
+  	text-decoration: none;
+  	color: var(--clr-neutral-100);
+  }
+
+  .course_name {
+  	color:var(--clr-galaxy-red);
+  }
+
+  .call-to-action {
+  	background-color: var(--bg-neutral-100);
   }
 
   .container {
@@ -151,6 +192,8 @@ select {
       grid-auto-columns: 1fr;
     }
   }
+
+
 
   /* General Stylings */ 
 
