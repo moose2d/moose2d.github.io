@@ -1,5 +1,34 @@
 /* select what is affected by the css style */
 
+:root {
+	--clr-primary-400: hsl(228, 39%, 23%);
+	--clr-accent-400: hsl(12, 88%, 59%);
+	--clr-accent-100: hsl(13, 100%, 96%);
+	--clr_neutral-100: hsl(232, 12%, 13%);
+	--clr-neutral-900: hsl(0, 0%, 0%);
+
+	--ff-primary: Roboto, sans-serif;
+
+	--ff-body: var(--ff-primary);
+	--ff-heading: var(--ff-primary);
+
+	--fw-primary:  100;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+	margin: 0;
+	padding: 0;
+	font:  inherit;
+}
+
 /* ======== BODY STYLE ========= */
 body {
 	background-color: #000;
@@ -7,24 +36,13 @@ body {
 	font-family: Calibri;
 }
 
-/* ======== H1 STYLE ========= */
-h1 {
-	margin-bottom: 0px;
-	font-family: Calibri, Candara, Segoe, "Segoe UI", Apple Chancery, Optima, Arial, sans-serif;
-}
-
 
 /* ======== PARAGRAPH STYLE ========= */
 p {
 	color: #666FFF;
 	margin-top: 0px;
-	text-align: center;
 }
 
-h2 {
-	margin-top: 0px;
-	font-size: 20px;
-}
 
 div {
 }
@@ -48,15 +66,22 @@ a:focus{
 }
 
 /* ----- Class Style Definitions ----- */
-.header {
+.title{
+	font-size: 50px;
+}
+.primary_header {
 	background-color: #334d4d;
 	background-image: url(../images/very_first.jpg);
 	background-size: cover;
 	background-position: center;
-	/*background-position-y: -50px;
-	background-position-x: 100px; */
+	background-position-y: -250px;
+	background-position-x: 0px;
 	background-repeat: no-repeat;
 	padding: 20px;
+}
+
+.title {
+	text-align:  left;
 }
 
 .motto {
@@ -90,3 +115,22 @@ span {
 
 	padding: 10px;
 }
+
+html:focus_within {
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	height:  100%;
+}
+
+img,
+picture,
+svg {
+	max-width: 100%;
+	display: block;
+}
+
+/* Utility Classes */
+

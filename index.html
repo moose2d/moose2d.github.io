@@ -9,6 +9,11 @@
 		<!-- Links to javascript files and css files here, metadata, description, etc (used for SEO) -->
 		<meta name="viewport" content="width=device-width">
 
+        <!-- Reference google fonts font Roboto --->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
 		<!-- Tell doc to use CSS style sheet --->
 		<link rel="stylesheet" href="css/style.css">
 
@@ -17,26 +22,87 @@
 	<body>
 			<!-- Body contains markup that displays in browser -->
 
-		<div class="header">
-			<h1> <center> Space Sojourn LLC </center> </h1>
-		
-			<p> <em> Teaching <span> Astrophotography </span> as a Vehicle through Space and Time </em> </p>
-	    </div>
+		<header class="primary_header">
+			<div class = "container"> 
+				<h1 class = "title"> Space Sojourn LLC </h1>
+				<p> <em> Teaching Astrophotography as a Vehicle through Space and Time </em> </p>
 
-		<div class="nav_box">
-			<h2> <a href = "about.html"> About </a> </h2>
-			<h2> <a href = "courses.html"> Courses </a> </h2>
-			<h2> <a href = "images.html"> Images </a> </h2>
-			<h2> <a href = "store.html"> Store </a> </h2>
-			<h2> <a href = "contact.html"> Contact </a> </h2>
-			<h2> <a href = "donate.html"> Donate </a> </h2>
-			<h2> <a href = "references.html"> References </a> </h2>
-			<h2> <a href = "login.html"> Login/Sign Up </a> </h2>
-	    </div>
-		
-		<center> <img src="images/heartNebula_1.jpg" alt="Image taken of the Heart Nebula from Bortle 6 skies" width="500" height="500"> </center>
-        
-		<script src="js/main.js"></script>
+				<nav class="primary_nav">
+					<ul role="list" class="prim_nav_list">
+						<li><a href="about.html"> About </a></li>
+						<li><a href="courses.html"> Courses </a></li>
+						<li><a href="images.html"> Images </a></li>
+						<li><a href="references.html"> References </a></li>
+						<li><a href="contact.html"> Contact</a></li>
+					</ul>
+				</nav>
+	            <button class="button">Login/Sign Up</button>
+			</div>
+	    </header>
+
+	    <main>
+	    	<section>
+	    		<div class="container">
+	    			<div class = "even_columns">
+		    			<div>
+		    				<h1>Getting Started</h1>
+		    				<p>Learn the basics of astrophotography and get started taking beautiful nightscapes with minimal investment</p>
+		    			</div>
+	    				<div>
+	    					<img src="images/rosetteNebula_forax.jpg" alt="The Rosette Nebula - Foraxx Palette" width="500px" height="456px">
+	    				</div>
+	    			</div>
+	    	</section>
+
+	    	<section>
+	    		<div class="container">
+	    			<div class ="even_columns">
+	    				<div>
+	    					<ul class = "course_names" role="list">
+		    				    <li>
+		    				    	<h2>Deep Sky Imaging</h2>
+			    					<p>Learn the techniques used to image deep sky objects outside of our own solar system. Capture nebulae and galaxies with striking beauty</p>
+			    				</li>
+			    				<li>
+			    					<h2>Lunar, Solar, and Planetary Imaging</h2>
+			    					<p>Discover our nearby solar system neighbors. Learn the tricks used by the best planetary, lunar, and solar imagers to capture craters, sun flares, planetary rings, and more</p>
+			    				</li>
+			    				<li>
+			    					<h2>Widefield Landscape and Milky Way imaging</h2>
+			    					<p>Discover what it takes to capture the night sky with a detailed foreground and detailed shots of the Mikly Way core.</p>
+			    				</li>
+			    				<li>
+			    					<h2>Astro Theory</h2>
+			    					<p>Get your geek on by learning about the science and mathematics behind astrophotography. Light propogation, photographic principles, sensor operation, and more are covered here </p>
+			    				</li>
+	    					</ul>
+		    			</div>	
+	    			</div>
+	    		</div>
+	    	</section>
+
+	    	<section class="carousel">
+	    		<h2></h2>
+	    		<!-- Carousel here -->
+	    		<button class="button"></button>
+	    	</section>
+
+	    	<section class="call_to_action">
+	    		<div class="container">
+	    			<div class ="even_columns">
+	    				<div>
+	  	    				<h2 class = "cta_text"> Get started on your astrophotgraphy journey today</h2>	
+	    				</div>
+	    				<div>
+	    					<button class="button">
+	    						Get Started
+	    					</button>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</section>
+
+	    </main>
 
 	</body>
 
