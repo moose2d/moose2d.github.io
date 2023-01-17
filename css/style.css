@@ -1,156 +1,163 @@
-/* select what is affected by the css style */
-
 :root {
-	--clr-primary-400: hsl(228, 39%, 23%);
-	--clr-accent-400: hsl(12, 88%, 59%);
-	--clr-accent-100: hsl(13, 100%, 96%);
-	--clr_neutral-100: hsl(232, 12%, 13%);
-	--clr-neutral-900: hsl(0, 0%, 0%);
+  --clr-accent-400: ;
+  --clr-accent-100: ;
+  --clr-primary-400: ;
+  --clr-neutral-100: ;
+  --clr-neutral-900: ;
 
-	--ff-primary: Roboto, sans-serif;
+  --font-family-primary: sans-serif;
 
-	--ff-body: var(--ff-primary);
-	--ff-heading: var(--ff-primary);
+  --fs-primary-heading: ;
 
-	--fw-primary:  100;
 }
 
+@media (min-width: 50em) {
+  :root {
+    --clr-accent-400: #fff;
+  }
+}
 /* Box sizing rules */
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin */
-* {
-	margin: 0;
-	padding: 0;
-	font:  inherit;
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
 
-/* ======== PARAGRAPH STYLE ========= */
-p {
-	color: #666FFF;
-	margin-top: 0px;
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
 }
 
-
-div {
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
-/* ---- Link Style Definitions ---- */
-a {
-	color: #FFF;
-	text-decoration: none;
-}
-
-a:hover{
-	color: #555;
-}
-
-a:visited{
-
-}
-
-a:focus{
-
-}
-
-/* ----- Class Style Definitions ----- */
-.title{
-	font-size: 50px;
-}
-.primary_header {
-	background-color: #334d4d;
-	background-image: url(../images/very_first.jpg);
-	background-size: cover;
-	background-position: center;
-	background-position-y: -250px;
-	background-position-x: 0px;
-	background-repeat: no-repeat;
-	padding: 20px;
-}
-
-.title {
-	text-align:  left;
-	color: #666FFF;
-}
-
-.motto {
-	color: #FFF;
-}
-
-.navigation {
-	background-color: #000;
-}
-
-/* ------ Span Style Definition ----- */
-span {
-	color:yellow;
-}
-
-/* ------ CSS Box Model ----- */
-/* Margin, Border, Padding */ 
-.nav_box {
-	background-color: #334d4d;
-	width: 150px;
-
-	margin_left: 0px;
-	margin_right:;
-	margin_top:;
-	margin_bottom: 5px;
-
-    /* Can do border left, right, top, bottom or all (no declaration) */
-	border-width: 5px;
-	border-color: #005;
-	border-style: solid; /* solid, dashed, dotted, double, goove, hidden, ridge */
-
-	padding: 10px;
-}
-
-html:focus_within {
-	scroll-behavior: smooth;
-}
-
-html,
+/* Set core body defaults */
 body {
-	height:  100%;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
 img,
-picture,
-svg {
-	max-width: 100%;
-	display: block;
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* Utility Classes */
 
-.container{
-	--max-width: 1110px;
-	--padding: 1rem;
+  .text-primary-400 {
+    color: var(--clr-primary-400);
+  }
+  .text-accent-400 {
+    color: var(--clr-accent-400);
+  }
+  .text-accent-100 {
+    color: var(--clr-accent-100);
+  }
+  .text-neutral-100 {
+    color: var(--clr-neutral-100);
+  }
+  .text-neutral-900 {
+    color: var(--clr-neutral-900);
+  }
+  .bg-primary-400 {
+    background: var(--clr-primary-400);
+  }
+  .bg-accent-400 {
+    background: var(--clr-accent-400);
+  }
+  .bg-accent-100 {
+    background: var(--clr-accent-100);
+  }
+  .bg-neutral-100 {
+    background: var(--clr-neutral-100);
+  }
+  .bg-neutral-900 {
+    background: var(--clr-neutral-900);
+  }
+  .fs-primary-heading {
+    font-size: var(--fs-primary-heading);
+  }
 
-	width: min(var(--max-width), 100% - (var(--padding)*2);
-	margin-inline: auto;
-}
+  .primary-header {
+    background: #000;
+    color: ghostwhite;
+  }
 
-.even_columns {
-	display: grid;
-	gap: 1rem;
-}
+  .container {
+    --max-width: 1000px;
+    --padding: 1rem;
 
-@media (min-width: 50em) {
-	.even_columns {
-		grid-auto-flow: column;
-	}
-}
+    width: min(var(--max-width), 100% - (var(--padding)*2));
+    margin-inline: auto;
+  }
 
-/* General Stylings */
-/* ======== BODY STYLE ========= */
-body {
-	font-size: var(--fs_primary);
-	background-color: ghostwhite;
-	color: var(--clr-primary-400);
-	font-family: Calibri;
-}
+  .even-columns {
+    display: grid;
+    gap: 1rem;
+  }
+
+  @media (min-width: 50em) {
+    .even-columns {
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+    }
+  }
+
+  /* General Stylings */ 
+
+  body {
+    font-size: 15px;
+    font-family: Optima, sans-serif;
+    background: ghostwhite;
+  }
+
+
