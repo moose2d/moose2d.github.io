@@ -221,6 +221,14 @@ select {
   @media (max-width: 50em) {
     .primary-navigation {
       display: none;
+
+      position: fixed;
+      inset: 50px;
+    }
+
+    .primary-navigation[data-visible] {
+      display: block;
+      position: fixed;
     }
 
     .mobile-nav-toggle{
@@ -242,19 +250,11 @@ select {
 
   }
 
-  .opened {
-    /* lock the position of the menu down when open */
-    display: block;
-    position: fixed;
-  }
-
   .nav-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
-
 
   /* General Stylings */ 
 
