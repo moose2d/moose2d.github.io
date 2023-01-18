@@ -24,10 +24,20 @@
 
 		<header class="primary-header">
 			<div class="container"> 
-				<h1 class = "title"> space sojourn </h1>
-				<p class="text-neutral-100"> <em> Teaching Astrophotography as a Vehicle through Space and Time </em> </p>
-				<nav class="primary-navigation">
-					<ul role="list" class="prim-nav-list">
+				<h1 class = "title">
+					<a href="/" class="home-link"> space sojourn</a>
+				</h1>
+				<p class="text-neutral-100"> 
+					<em> Teaching Astrophotography as a Vehicle through Space and Time </em> 
+				</p>
+				<div class="nav-wrapper">
+				<button class="mobile-nav-toggle" aria-controls="primary-navigation">
+					<!-- use menu icon here -->
+					<img class="menu_closed" src="images/menu_closed.png" alt="" aria-hidden="true">
+					<img class="menu_open" src="images/menu_open.png" alt="" aria-hidden="true">
+				</button>
+				<nav class="primary-navigation" id="primary-navigation">
+					<ul aria-label="Primary" role="list" class="prim-nav-list" >
 						<li><a href="about.html">About</a></li>
 						<li><a href="courses.html"> Courses</a></li>
 						<li><a href="images.html">Images</a></li>
@@ -36,6 +46,7 @@
 					</ul>
 				</nav>
 	            <button class="button">Login/Sign Up</button>
+	            </div>
 			</div>
 	    </header>
 
@@ -60,19 +71,19 @@
 	    				<div>
 	    					<ul class = "course_names" role="list">
 		    				    <li>
-		    				    	<h2>Deep Sky Imaging</h2>
+		    				    	<h2 class="course_name">Deep Sky Imaging</h2>
 			    					<p>Learn the techniques used to image deep sky objects outside of our own solar system. Capture nebulae and galaxies with striking beauty</p>
 			    				</li>
 			    				<li>
-			    					<h2>Lunar, Solar, and Planetary Imaging</h2>
+			    					<h2 class="course_name">Lunar, Solar, and Planetary Imaging</h2>
 			    					<p>Discover our nearby solar system neighbors. Learn the tricks used by the best planetary, lunar, and solar imagers to capture craters, sun flares, planetary rings, and more</p>
 			    				</li>
 			    				<li>
-			    					<h2>Widefield Landscape and Milky Way imaging</h2>
+			    					<h2 class="course_name">Widefield Landscape and Milky Way Imaging</h2>
 			    					<p>Discover what it takes to capture the night sky with a detailed foreground and detailed shots of the Mikly Way core.</p>
 			    				</li>
 			    				<li>
-			    					<h2>Astro Theory</h2>
+			    					<h2 class="course_name">Astro Theory</h2>
 			    					<p>Get your geek on by learning about the science and mathematics behind astrophotography. Light propogation, photographic principles, sensor operation, and more are covered here </p>
 			    				</li>
 	    					</ul>
@@ -115,6 +126,9 @@
 	    	</section>
 
 	    </main>
+
+	   	<!-- Add References to javascript -->
+	    <script src="js/main.js"></script>
 
 	</body>
 

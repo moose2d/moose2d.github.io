@@ -76,7 +76,6 @@ picture {
 
 /* Inherit fonts for inputs and buttons */
 input,
-button,
 textarea,
 select {
   font: inherit;
@@ -99,6 +98,20 @@ select {
 }
 
 /* Utility Classes */
+
+
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
 
   .text-primary-400 {
     color: var(--clr-primary-400);
@@ -150,19 +163,19 @@ select {
   }
 
   .primary-header {
-    background: #000;
+    background: #fff;
     background-image: url(../images/header_moon.jpg);
     background-position-x: -300px;
     background-position-y: -200px;
   }
 
-  .primary-header .title {
-  	color: var(--clr-galaxy-blue);
+  .primary-header .title .home-link {
+  	color: var(--clr-galaxy-red);
   }
 
-  .title a, a:link, a:visited, a:hover, a:active {
+  .prim-nave-list a, a:link, a:visited, a:hover, a:active {
+  	color: var(--clr-nebula-lightblue);
   	text-decoration: none;
-  	color: var(--clr-neutral-100);
   }
 
   .course_name {
@@ -193,14 +206,68 @@ select {
     }
   }
 
+  /* navigation */
+
+  .primary-header {
+    margin-top: 45px;
+    display: flex;
+  }
+
+  .mobile-nav-toggle {
+    display: none;
+  }
+
+
+  @media (max-width: 50em) {
+    .primary-navigation {
+      display: none;
+    }
+
+    .mobile-nav-toggle{
+      display: block;
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+      padding: 0.5em;
+    }
+
+
+    .mobile-nav-toggle .menu_open {
+      /*display: none;*/
+    }
+
+    .mobile-nav-toggle .menu_closed {
+     display: none;
+    }
+
+  }
+
+  .opened {
+    /* lock the position of the menu down when open */
+    display: block;
+    position: fixed;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 
 
   /* General Stylings */ 
+
+  .button {
+    border: none;
+    color: var(--clr-nebula-lightblue);
+    background-color: var(--clr-galaxy-red);
+    border-radius: 8px;
+  }
 
   body {
     font-size: 15px;
     font-family: Optima, sans-serif;
     background: ghostwhite;
   }
-
 
