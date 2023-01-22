@@ -163,10 +163,14 @@ select {
   }
 
   .primary-header {
-    background: #fff;
-    background-image: url(../images/header_moon.jpg);
+    background: #ffff;
     background-position-x: -300px;
     background-position-y: -200px;
+  }
+
+  .header-logo {
+    height: 100px;
+    width: 300px;
   }
 
   .primary-header .title .home-link {
