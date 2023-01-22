@@ -213,7 +213,6 @@ select {
   /* navigation */
 
   .primary-header {
-    margin-top: 45px;
     display: flex;
   }
 
