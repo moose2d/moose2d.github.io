@@ -1,0 +1,23 @@
+{
+  "name": "Space Sojourn LLC",
+  "version": "1.0.0",
+  "description": "Educational Material for Astrophotography",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moose2d/moose2d.github.io.git"
+  },
+  "keywords": [],
+  "author": "Jay Drobnick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moose2d/moose2d.github.io/issues"
+  },
+  "homepage": "https://github.com/moose2d/moose2d.github.io#readme",
+  "dependencies": {
+    "firebase": "^9.16.0"
+  }
+}
