@@ -163,7 +163,7 @@ select {
   }
 
   .primary-header {
-    background: #ffff;
+    background: 0xffff;
     background-position-x: -300px;
     background-position-y: -200px;
   }
