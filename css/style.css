@@ -97,6 +97,11 @@ select {
   }
 }
 
+  body {
+    font-size: 15px;
+    font-family: Optima, sans-serif;
+    background: ghostwhite;
+  }
 /* Utility Classes */
 
 .visually-hidden {
@@ -240,10 +245,17 @@ select {
     justify-self: right;
   }
 
+
+  .thumbnails {
+    display: flex;
+    justify-content: space-between;
+  }
+
   /* General Stylings */ 
 
   .container {
     display: flex;
+    height: 100%;
   }
 
   .image-gallery{
@@ -268,6 +280,16 @@ select {
     margin-right: 5px;
   }
 
+  .content-window {
+    height: 100%;
+  }
+
+  .section-title h1{
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+  }
+
   .button {
     border: none;
     color: var(--clr-nebula-lightblue);
@@ -275,14 +297,8 @@ select {
     border-radius: 8px;
   }
 
-  body {
-    font-size: 15px;
-    font-family: Optima, sans-serif;
-    background: ghostwhite;
-  }
-
 /* Red Box Border to Help with Seeing Layout */
 /* Disable for production */
 * {
-  /*border: 2px solid red;*/
+  border: 2px solid red;
 }
