@@ -99,7 +99,6 @@ select {
 
 /* Utility Classes */
 
-
 .visually-hidden {
   position: absolute;
   position: absolute !important;
@@ -162,19 +161,9 @@ select {
     font-size: var(--fs-primary-heading);
   }
 
-  .primary-header {
-    background: 0xffff;
-    background-position-x: -300px;
-    background-position-y: -200px;
-  }
-
   .header-logo {
     height: 100px;
     width: 300px;
-  }
-
-  .primary-header .title .home-link {
-  	color: var(--clr-galaxy-red);
   }
 
   .prim-nave-list a, a:link, a:visited, a:hover, a:active {
@@ -190,76 +179,80 @@ select {
   	background-color: var(--bg-neutral-100);
   }
 
-  .container {
-    --max-width: 1000px;
-    --padding: 1rem;
-
-    width: min(var(--max-width), 100% - (var(--padding)*2));
-    margin-inline: auto;
-  }
-
-  .even-columns {
-    display: grid;
-    gap: 1rem;
-  }
-
-  @media (min-width: 50em) {
-    .even-columns {
-      grid-auto-flow: column;
-      grid-auto-columns: 1fr;
-    }
-  }
-
   /* navigation */
 
   .primary-header {
+    justify-content: space-between;
+    display: flex;
+    flex: 1;
+    height: 100px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+  }
+
+  .primary-nav {
     display: flex;
   }
 
-  .mobile-nav-toggle {
-    display: none;
+  .primary-nav ul {
+    font-size: 30px;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
   }
 
-
-  @media (max-width: 50em) {
-    .primary-navigation {
-      display: none;
-
-      position: fixed;
-      inset: 50px;
-    }
-
-    .primary-navigation[data-visible] {
-      display: block;
-      position: fixed;
-    }
-
-    .mobile-nav-toggle{
-      display: block;
-      cursor: pointer;
-      background: transparent;
-      border: 0;
-      padding: 0.5em;
-    }
-
-
-    .mobile-nav-toggle .menu_open {
-      /*display: none;*/
-    }
-
-    .mobile-nav-toggle .menu_closed {
-     display: none;
-    }
-
+  .primary-nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    flex: 1;
   }
 
-  .nav-wrapper {
+  .user-bar {
+    background-color: #F7F5F4;
     display: flex;
     justify-content: space-between;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 2px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 50px;
+  }
+
+  #login-button {
+    justify-self: right;
   }
 
   /* General Stylings */ 
+
+  .container {
+    display: flex;
+  }
+
+  .sidebar {
+    height: 100%;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    justify-self: start;
+    overflow: auto;
+    display: inline-block;
+    border-right-style: solid;
+    border-right-color: gray;
+    border-right-width: 2px;
+    margin-right: 5px;
+  }
 
   .button {
     border: none;
@@ -274,3 +267,8 @@ select {
     background: ghostwhite;
   }
 
+/* Red Box Border to Help with Seeing Layout */
+/* Disable for production */
+* {
+  /*border: 2px solid red;*/
+}
