@@ -189,6 +189,11 @@ select {
     border-bottom-style: solid;
     border-bottom-width: 2px;
     border-bottom-color: black;
+    color: black;
+  }
+
+  .primary-header a{
+    flex-shrink: 1;
   }
 
   .primary-nav {
@@ -196,6 +201,7 @@ select {
   }
 
   .primary-nav ul {
+    color: black;
     font-size: 30px;
     justify-self: center;
     align-items: center;
@@ -238,6 +244,14 @@ select {
 
   .container {
     display: flex;
+  }
+
+  .image-gallery{
+    flex: 1;
+  }
+
+  .image-gallery div{
+    flex: 1;
   }
 
   .sidebar {
