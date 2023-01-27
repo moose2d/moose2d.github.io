@@ -100,7 +100,7 @@ select {
   body {
     font-size: 15px;
     font-family: Optima, sans-serif;
-    background: ghostwhite;
+    background: 0xFFFF;
   }
 /* Utility Classes */
 
@@ -188,6 +188,8 @@ select {
 
   .primary-header {
     justify-content: space-between;
+    text-align: center;
+    text-justify: center;
     display: flex;
     flex: 1;
     height: 100px;
@@ -251,6 +253,17 @@ select {
     justify-content: space-between;
   }
 
+  .thumbnails .img-block{
+    text-justify: center;
+    text-align: center;
+  }
+
+  .thumbnail-img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+  }
+
   /* General Stylings */ 
 
   .container {
@@ -300,5 +313,5 @@ select {
 /* Red Box Border to Help with Seeing Layout */
 /* Disable for production */
 * {
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
