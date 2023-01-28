@@ -234,7 +234,7 @@ select {
     border-top-style: solid;
     border-top-color: black;
     border-top-width: 2px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     align-items: center;
@@ -245,23 +245,6 @@ select {
 
   #login-button {
     justify-self: right;
-  }
-
-
-  .thumbnails {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .thumbnails .img-block{
-    text-justify: center;
-    text-align: center;
-  }
-
-  .thumbnail-img {
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
   }
 
   /* General Stylings */ 
@@ -293,6 +276,10 @@ select {
     margin-right: 5px;
   }
 
+  .sidebar ul{
+    list-style: none;
+  }
+
   .content-window {
     height: 100%;
   }
@@ -308,6 +295,22 @@ select {
     color: var(--clr-nebula-lightblue);
     background-color: var(--clr-galaxy-red);
     border-radius: 8px;
+  }
+  
+  .thumbnails {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .thumbnails .img-block{
+    text-justify: center;
+    text-align: center;
+  }
+
+  .thumbnail-img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
   }
 
 /* Red Box Border to Help with Seeing Layout */
