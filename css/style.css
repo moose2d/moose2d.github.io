@@ -187,6 +187,7 @@ select {
   /* navigation */
 
   .primary-header {
+    background-color: black;
     justify-content: space-between;
     text-align: center;
     text-justify: center;
@@ -223,7 +224,7 @@ select {
   }
 
   .user-bar {
-    background-color: #F7F5F4;
+    background-color: var(--clr-nebula-lightblue);
     display: flex;
     justify-content: space-between;
     height: 50px;
@@ -231,6 +232,7 @@ select {
   }
 
   .footer {
+    background-color: var(--clr-nebula-lightblue);
     border-top-style: solid;
     border-top-color: black;
     border-top-width: 2px;
@@ -298,6 +300,8 @@ select {
   }
   
   .thumbnails {
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
   }
@@ -305,12 +309,14 @@ select {
   .thumbnails .img-block{
     text-justify: center;
     text-align: center;
+    object-fit: cover;
   }
 
   .thumbnail-img {
     width: 300px;
     height: 300px;
     overflow: hidden;
+    object-fit: cover;
   }
 
 /* Red Box Border to Help with Seeing Layout */

@@ -21,6 +21,17 @@ function daysToNewMoon (currentDay, nextNewMoonDay) {
 
 console.log(`Days to new moon: ${daysToNewMoon(currentDay, nextNewMoonDay)}`);
 
+// Create a reference to the "container" class from HTML
+const container = document.querySelector('.container'); 
+// Create a new 'div' element and store in a variable named content
+const content = document.createElement('div');
+// Apply a class tag to the new variable "content"
+content.classList.add('container');
+// Add text to the div
+content.textContent = 'This is text content in a container';
+// Add the variable to the container reference
+container.appendChild(content);
+
 /* ---- EXAMPLE FUNCITONS ---- */
 
 // --- add7 ----
