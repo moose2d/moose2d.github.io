@@ -1,4 +1,6 @@
-const myImage = document.querySelector("img");
+
+let currentUrl = window.location.href;
+const IMG_PATH = "../images/";
 
 /* --------- Image Display Example - changers on click ------------
 /*
@@ -21,16 +23,49 @@ function daysToNewMoon (currentDay, nextNewMoonDay) {
 
 console.log(`Days to new moon: ${daysToNewMoon(currentDay, nextNewMoonDay)}`);
 
-// Create a reference to the "container" class from HTML
-const container = document.querySelector('.container'); 
-// Create a new 'div' element and store in a variable named content
-const content = document.createElement('div');
-// Apply a class tag to the new variable "content"
-content.classList.add('container');
-// Add text to the div
-content.textContent = 'This is text content in a container';
-// Add the variable to the container reference
-container.appendChild(content);
+
+
+// =========== IMG CAROUSEL============
+ const carousel_container = document.querySelector(".carousel-container");
+if (currentUrl.includes("index.html")) {
+  // code specific to images.html
+  carousel_container.style.width = "750px";
+  carousel_container.style.align = "center";
+} else if (currentUrl.includes("images.html")) {
+  // code specific to images.html
+  carousel_container.style.width = "500px";
+}
+
+ const slides = document.querySelectorAll(".slide");
+ let index = 0;
+
+ function showSlide() {
+   for (let i = 0; i < slides.length; i++) {
+     slides[i].classList.remove("active");
+   }
+   slides[index].classList.add("active");
+ }
+
+ const prevBtn = document.getElementById("prevBtn");
+ prevBtn.addEventListener("click", function() {
+  console.log("prevBtn pressed");
+   index--;
+   if (index < 0) {
+     index = slides.length - 1;
+   }
+   showSlide();
+ });
+
+ const nextBtn = document.getElementById("nextBtn");
+ nextBtn.addEventListener("click", function() {
+  console.log("pnextBtn pressed");
+   index++;
+   if (index >= slides.length) {
+     index = 0;
+   }
+   showSlide();
+ });
+
 
 /* ---- EXAMPLE FUNCITONS ---- */
 

@@ -319,6 +319,23 @@ select {
     object-fit: cover;
   }
 
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slide {
+    display: none;
+  }
+  .active {
+    display: block;
+  } 
+
 /* Red Box Border to Help with Seeing Layout */
 /* Disable for production */
 * {
