@@ -59,6 +59,8 @@ if (currentUrl.includes("index")) {
 } else if (currentUrl.includes("images.html")) {
   // code specific to images.html
   carousel_container.style.width = "500px";
+} else {
+  carousel_container.style.width="500px";
 }
 
  const slides = document.querySelectorAll(".slide");
