@@ -52,9 +52,9 @@ primary_header.appendChild(primary_nav);
 
 // =========== IMG CAROUSEL============
 const carousel_container = document.querySelector(".carousel-container");
-if (currentUrl.includes("index.html")) {
+if (currentUrl.includes("index")) {
   // code specific to images.html
-  carousel_container.style.width = "750px";
+  carousel_container.style.width = "500px";
   carousel_container.style.align = "center";
 } else if (currentUrl.includes("images.html")) {
   // code specific to images.html
