@@ -206,10 +206,10 @@ select {
 
   .primary-nav {
     display: flex;
+    color: ghostwhite;
   }
 
   .primary-nav ul {
-    color: black;
     font-size: 30px;
     justify-self: center;
     align-items: center;

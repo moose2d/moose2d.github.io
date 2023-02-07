@@ -23,10 +23,35 @@ function daysToNewMoon (currentDay, nextNewMoonDay) {
 
 console.log(`Days to new moon: ${daysToNewMoon(currentDay, nextNewMoonDay)}`);
 
-
+//=========== PRIMARY HEADER ==========
+/*
+const primary_header = document.querySelector(".primary-header");
+const primary_nav    = document.querySelector(".primary-nav");
+let nav_list         = document.createElement("ul");
+let nav_item0        = document.createElement("li");
+nav_item0.innerHTML  = "Home";
+let nav_item1        = document.createElement("li");
+nav_item1.innerHTML  = "About";
+let nav_item2        = document.createElement("li");
+nav_item2.innerHTML  = "Images";
+let nav_item3        = document.createElement("li");
+nav_item3.innerHTML  = "Tutorials";
+let nav_item4        = document.createElement("li");
+nav_item4.innerHTML  = "Store";
+let nav_item5        = document.createElement("li");
+nav_item4.innerHTML  = "Contact";
+nav_list.appendChild(nav_item0);
+nav_list.appendChild(nav_item1);
+nav_list.appendChild(nav_item2);
+nav_list.appendChild(nav_item3);
+nav_list.appendChild(nav_item4);
+nav_list.appendChild(nav_item5);
+primary_nav.appendChild(nav_list);
+primary_header.appendChild(primary_nav);
+*/
 
 // =========== IMG CAROUSEL============
- const carousel_container = document.querySelector(".carousel-container");
+const carousel_container = document.querySelector(".carousel-container");
 if (currentUrl.includes("index.html")) {
   // code specific to images.html
   carousel_container.style.width = "750px";
