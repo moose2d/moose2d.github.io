@@ -296,6 +296,7 @@ select {
    display: none; 
   }
 
+  /* Make the menu disappear when screen size decreases */
   @media screen and (max-width: 600px) {
     .primary-nav ul {
       display: none; 
@@ -307,6 +308,13 @@ select {
      color: white;
      padding: 10px;
      cursor: pointer; 
+    }
+  } 
+
+  /* Make the menu reappear when screen size increases */ 
+  @media screen and (min-width: 601px){
+    .primary-nav ul {
+      display: flex;
     }
   } 
 

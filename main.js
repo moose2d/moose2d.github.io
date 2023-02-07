@@ -61,6 +61,12 @@ collapse_menu.addEventListener('mouseenter', function() {
   menu.style.display = "flex"; 
 });
 
+collapse_menu.addEventListener('click', function() {
+  menu_visible = true;
+  const menu = nav_menu.querySelector("ul");
+  menu.style.display = "flex"; 
+});
+
 nav_menu.addEventListener('mouseenter', function() {
   menu_visible = true;
   const menu = nav_menu.querySelector("ul");
