@@ -50,6 +50,35 @@ primary_nav.appendChild(nav_list);
 primary_header.appendChild(primary_nav);
 */
 
+//============ NAV MENU ===============
+const nav_menu = document.querySelector(".primary-nav");
+const collapse_menu = document.querySelector("#collapse_menu");
+let menu_visible = false;
+
+collapse_menu.addEventListener('mouseenter', function() {
+  menu_visible = true;
+  const menu = nav_menu.querySelector("ul");
+  menu.style.display = "flex"; 
+});
+
+nav_menu.addEventListener('mouseenter', function() {
+  menu_visible = true;
+  const menu = nav_menu.querySelector("ul");
+  menu.style.display = "flex";
+})
+
+nav_menu.addEventListener('mouseleave', function() {
+  menu_visible = false;
+  const menu = nav_menu.querySelector("ul");
+  menu.style.display = "none";
+})
+
+// jd // collapse_menu.addEventListener('click', function() {
+// jd //   menu_visible = false;
+// jd //   const menu = nav_menu.querySelector("ul");
+// jd //   menu.style.display = "none"; 
+// jd // });
+
 // =========== IMG CAROUSEL============
 const carousel_container = document.querySelector(".carousel-container");
 if (currentUrl.includes("index.html")) {
