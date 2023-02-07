@@ -301,7 +301,13 @@ select {
     .primary-nav ul {
       display: none; 
       flex-direction: column;
+      background-color: var(--clr-galaxy-red);
+      z-index: 1; /* keeps menu on top of other elements */ 
     } 
+
+    .primary-nav ul li {
+      color: black;
+    }
 
     #collapse_menu {
      display: block;
