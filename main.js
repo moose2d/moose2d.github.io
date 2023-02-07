@@ -55,6 +55,14 @@ const nav_menu = document.querySelector(".primary-nav");
 const collapse_menu = document.querySelector("#collapse_menu");
 let menu_visible = false;
 
+const screen_size_bp = window.matchMedia("(max-width: 600px");
+const screen_size_big = window.matchMedia("(min-width: 601px");
+
+if(screen_size_big.matches){
+  const menu = nav_menu.querySelector("ul");
+  menu.style.display = "flex"; 
+}
+
 collapse_menu.addEventListener('mouseenter', function() {
   menu_visible = true;
   const menu = nav_menu.querySelector("ul");
@@ -62,9 +70,13 @@ collapse_menu.addEventListener('mouseenter', function() {
 });
 
 collapse_menu.addEventListener('click', function() {
-  menu_visible = true;
+  menu_visible = !menu_visible;
   const menu = nav_menu.querySelector("ul");
-  menu.style.display = "flex"; 
+  if(menu_visible) {
+    menu.style.display = "flex";
+  } else {
+    menu.style.display = "none";
+  }
 });
 
 nav_menu.addEventListener('mouseenter', function() {
@@ -76,7 +88,11 @@ nav_menu.addEventListener('mouseenter', function() {
 nav_menu.addEventListener('mouseleave', function() {
   menu_visible = false;
   const menu = nav_menu.querySelector("ul");
-  menu.style.display = "none";
+  if(screen_size_bp.matches) {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+  }
 })
 
 // jd // collapse_menu.addEventListener('click', function() {
