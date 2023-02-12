@@ -343,8 +343,8 @@ select {
   }
 
   .thumbnails .img-block{
-    text-justify: center;
-    text-align: center;
+    text-justify: left;
+    text-align:  left;
     object-fit: cover;
   }
 
@@ -353,6 +353,16 @@ select {
     height: 300px;
     overflow: hidden;
     object-fit: cover;
+  }
+
+  .thumnail-title {
+    margin: 0;
+    padding: 0;
+  }
+
+  .price {
+    margin: 0;
+    padding: 0;
   }
 
   .carousel-container {

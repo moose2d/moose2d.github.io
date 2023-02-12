@@ -58,11 +58,6 @@ let menu_visible = false;
 const screen_size_bp = window.matchMedia("(max-width: 600px");
 const screen_size_big = window.matchMedia("(min-width: 601px");
 
-if(screen_size_big.matches){
-  const menu = nav_menu.querySelector("ul");
-  menu.style.display = "flex"; 
-}
-
 collapse_menu.addEventListener('mouseenter', function() {
   menu_visible = true;
   const menu = nav_menu.querySelector("ul");
@@ -86,12 +81,13 @@ nav_menu.addEventListener('mouseenter', function() {
 })
 
 nav_menu.addEventListener('mouseleave', function() {
-  menu_visible = false;
   const menu = nav_menu.querySelector("ul");
   if(screen_size_bp.matches) {
     menu.style.display = "none";
+    menu_visible = false;
   } else {
     menu.style.display = "flex";
+    menu_visible = true;
   }
 })
 
