@@ -183,4 +183,3 @@ function compareChoices (playerChoice, computerChoice) {
 }
 
 compareChoices(playerChoice, getComputerChoice(choices))
-*/

@@ -382,6 +382,15 @@ select {
     display: block;
   } 
 
+  .purchase-pane {
+    display: flex;
+  }
+
+  .purchase-pane .image-preview {
+    padding: 3px;
+    margin-right: 5px;
+  }
+
 /* Red Box Border to Help with Seeing Layout */
 /* Disable for production */
 * {
