@@ -1,81 +1,63 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<link rel="stylesheet" href="css/style.css">
+    <!-- ... same as before ... -->
+    <title>Images - My Photography LLC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <header>
+    <header id="navbar-placeholder"></header>
 
-	<div class="primary-header">
-		<img src="images/logo2_small_transparent.png" alt="logo2_small_transparent">
-		<div class = "primary-nav">
-			<ul>
-				<li> <a href="index.html"> Home </a></li>	
-				<li> <a href="about.html">About </a></li>
-				<li> <a href="courses.html"> Tutorials</a></li>
-				<li> <a href="images.html"> Images </a></li>
-				<li> <a href="store.html">Store </a></li>
-				<li> <a href="contact.html">Contact </a></li>
-				<li> <a href="login.html">Login </a></li>
-			</ul>
-		</div>
-	</div>
+    <main role="main">
+        <div class="album py-5 bg-light">
+            <div class="container">
+            <h1>Image Gallery</h1>
+                <div class="row">
 
-	<div class = "container>">
-		<div class = "thumbnails">
-			<div class="img-block">
-				<img class="thumbnail-img" src="images/heartNebula_1.jpg" alt="Image taken of the Heart Nebula from Bortle 6 skies" width="500" height="500">
-			</div>
-			<div class="img-block">
-				<img class="thumbnail-img" src="images/foraxx_jpg.jpg" alt="foraxx_jpg" width="500" height="500">
-			</div>
-			<div class="img-block">
-				<img class="thumbnail-img" src="images/nebula/rosette-asi2600mm-sho-1hr30min_crop.jpg" alt="rosette-asi2600mm-sho-1hr30min_crop" width="750" height="500">
-			</div>
-			<div class="img-block">
-				<img class="thumbnail-img" src="images/m33_firstPass_45mINT.jpg" alt="m33_firstPass_45mINT.jpg" width="500" height="500">
-			</div>
-		</div>
-	</div>
+                    <!-- Image Item -->
+                    <div class="col-md-4">
+                        <div class="col-sm-4">
+                            <a href="purchase.html?id=1">
+                                <img src="images/heart_foraxx.jpg" alt="Heart Nebula" class="img-thumbnail">
+                            </a>
+                            <p>An emission nebula that appears in the shape of a heart.</p>
+                        </div>
+                    </div>
 
-	<div class = "container>">
-		<div class = "thumbnails">
-			<div class="img-block">
-				<a href = "prints/ic410.html">
-					<img class="thumbnail-img" src="images/ic410_foraxx_crop_web.jpg" alt="ic410_foraxx_crop_web">
-					<h4 class="thumbnail-title"> IC410 - The Tadpole Nebula </h4>
-					<h6 class="price"> $49.99 - $194.99 </h6>
-				</a>
-			</div>
-			<div class="img-block">
-				<a href="">
-					<img class="thumbnail-img" src="images/ic1805_foraxx_web.jpg" alt="ic1805_foraxx_web">
-					<h4 class="thumbnail-title"> IC805 - The Heart Nebula </h4>
-					<h6 class="price"> $49.99 - $194.99 </h6>
-				</a>
-			</div>
-			<div class="img-block">
-				<a href="">
-					<img class="thumbnail-img" src="images/m42_hos_web.jpg" alt="m42_hos_web.jpg">
-					<h4 class="thumbnail-title"> M42 - The Great Orion Nebula </h4>
-					<h6 class="price"> $49.99 - $194.99 </h6>
-			    </a>
-			</div>
-			<div class="img-block">
-			</div>
-		</div>
-	</div>
+                    <!-- Image Item -->
+                    <div class="col-md-4">
+                        <div class="col-sm-4">
+                            <a href="purchase.html?id=2">
+                                <img src="images/heartNebula_1.jpg" alt="Heart Nebula" class="img-thumbnail">
+                            </a>
+                            <p>An emission nebula that appears in the shape of a heart.</p>
+                        </div>
+                    </div>
+                    <!-- Image Item -->
+                    <div class="col-md-4">
+                        <div class="col-sm-4">
+                            <a href="purchase.html?id=3">
+                                <img src="images/heartNebula_2.jpg" alt="Heart Nebula" class="img-thumbnail">
+                            </a>
+                            <p>An emission nebula that appears in the shape of a heart.</p>
+                        </div>
+                    </div>
 
-<div class = "footer">
-	<p>All content property of Space Sojourn LLC 2023</p>	
-</div>
+                </div>
+            </div>
+        </div>
 
-<script src="js/main.js"></script>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer-placeholder"></footer>
+
+    <!-- JS jQuery and Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
-
 </html>
